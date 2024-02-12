@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+n25HRKBROHOnx5c5p7q/TItM5y9sEkljz23iwrFeI8V1BwWu1d6Hz0F+bWVe3xrNdemhdvt1Sozq7A9t8vruQ==",
+  "success": true,
+  "projectFilePath": "D:\\Progetti\\TestAppRistorante\\TestAppRistorante\\TestAppRistorante.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\wisej-3\\3.5.4\\wisej-3.3.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
