@@ -1,4 +1,6 @@
-﻿public class Prodotto
+﻿using System;
+
+public class Prodotto
 {
     public int IDProdotto { 
         get {
@@ -17,6 +19,7 @@
             _IDCategoria = value; 
         }
     }
+
     public decimal Prezzo
     {
         get
@@ -61,12 +64,27 @@
             _Immagine = value;
         }
     }
-
+    public CategoriaType IDCategoriaTipo
+    {
+        get { 
+            return (CategoriaType)Enum.Parse(typeof(CategoriaType), IDCategoria.ToString());
+        }
+    }
     private int _IDProdotto;
     private int _IDCategoria;
     private decimal _Prezzo;
     private decimal? _Sconto;
     private string _Descrizione;
     private string _Immagine;
-
+    public enum CategoriaType
+    {
+        ANTIPASTI = 1,
+        CONTORNI,
+        PRIMI,
+        SECONDI,
+        PIZZE,
+        VINI,
+        BEVANDE,
+        DOLCI
+    }
 }
